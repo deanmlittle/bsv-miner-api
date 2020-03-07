@@ -83,7 +83,7 @@ const getBlockHeader = async(req, res) => {
 
 const getTX = async(req, res) => {
     try {
-        const data = await rpc('gettransaction', [req.params.txid]);        
+        const data = await rpc('getrawtransaction', [req.params.txid, 1]);        
         res.json(data.result);
     } catch(e) {
         res.status(500).send(e);
