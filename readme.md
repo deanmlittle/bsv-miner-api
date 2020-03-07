@@ -8,15 +8,15 @@ A simple way of enabling users to use the JSON-RPC API securely.
     cd bsv-miner-api
     npm install
     ```
-3. Edit the `config.js` file with your desired settings:
+3. Run `node setup` to create a `config.js` file, or create your own like so:
     ```js
     {
-        port: 1339,
+        port: 1337,
         jsonrpc: {
             user: 'bitcoin',
             password: 'bitcoin',
             host: '127.0.0.1',
-            port: 18332
+            port: 9332
         }
     }
     ```
